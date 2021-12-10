@@ -4,10 +4,20 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
 .header {
     margin: 40px 20px 0;
     font-size: 0;
-    height: 45px;
+    height: 80px;
+    
 }
 
 .header ul {
@@ -57,7 +67,7 @@ button[type=button] {
 }
 
 .main {
-    margin-top: 150px;
+    margin-top: 280px;
     text-align: center;
 }
 
@@ -75,10 +85,10 @@ h1 {
 }
 
 h4 {
-    color: #46484c;
     font-family: 'Slabo 27px', serif;
     font-weight: 400;
     font-size: 20px;
+    color: #46484c;
 }
 
 
@@ -104,3 +114,79 @@ button[type=submit] {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin:110px auto;
+    align-items: center;
+    flex-basis: ;
+}
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 50%;
+}
+
+.explanatory-video img {
+    width: 120px;
+    margin: 10px 0 0;
+}
+
+.publish {
+    padding:20px;
+    flex: 50%;
+}
+
+.publish h3 {
+    font-family: 'Alegreya', serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+    margin: 0;
+}
+
+.publish .texto-publish {
+    color: #343434;
+    font-weight: 400;
+    font-size: 16px;
+    color: #025157;
+}
+
+.publish .texto-gris-publish {
+    color: #8b8b8bcc;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.publish .signup-form{
+    height: 55px;
+}
+
+.publish .signup-form input {
+    width: 60%;
+    max-width: 250px;
+    height: 75%;
+    border: solid 1px #b6b6b6;
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-size: 16px;
+}
+
+.publish .signup-form button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 6px 20px;
+    margin-left: -10px;
+    height: 100%;
+    font-size: 16px;
+}
+
