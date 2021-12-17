@@ -14,10 +14,10 @@ body {
 }
 
 .header {
-    margin: 40px 20px 0;
+/*     margin: 40px 20px 0;
     font-size: 0;
-    height: 80px;
-    
+    height: 80px; */
+    background-color: #fffbf7;
 }
 
 .header ul {
@@ -30,12 +30,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header > * {
+/* .header > * {
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
 }
-
+ */
 .header .logo {
     width: 20%;
 }
@@ -90,7 +90,6 @@ h4 {
     font-size: 20px;
     color: #46484c;
 }
-
 
 p {
     color: #8b8b8bcc;
@@ -262,6 +261,106 @@ figure {
 
 .imagen-responsiva {
     width: 40px;
+}
+
+@media (max-width: 425px) {
+
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar, .actions {
+        display: none;
+    }
+
+    .header .logo {
+        display: flex;
+        justify-content: center;
+        width: 20%;
+    }
+    .main {
+        margin-top: 130px;
+        text-align: center;
+        height: auto;
+    }
+
+    .main h1 {
+        font-size: 30px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .main .imagen-propiedades {
+        width: 100%;
+    }
+
+    .main h4 {
+        padding: 0 20px;
+    }
+
+    .promo {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    .main .explanatory-video {
+        width: 100%;
+    }
+
+    .main form {
+        width: 95%;
+    }
+
+    .main input[type=email]{
+        padding: 15px 5px;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+        gap: 20px;
+        background-color: #025157;
+        padding: 10%;
+        height: 1420px;
+    }
+
+    .feature-image{
+        display:none;
+    }
+
+    .publish {
+        margin-top: 15px;
+        flex: 1;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .publish .signup-form {
+        width: 100%;
+        height: 45px;
+    }
+
+    .signup-form input[type=text] {
+        width: 30%;
+        height: 100%;
+    }
+
+    .signup-form button{
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .texto-gris-publish {
+        font-size: 12px;
+    }
+
+
 }
 
 
