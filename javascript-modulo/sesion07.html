@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 1: Reemplazar Imágenes</title>
+</head>
+
+<body>
+
+<!--     <script>
+         let h1 = document.createElement('h1');
+         console.log(h1);
+
+         let text = document.createTextNode('Hola')
+    </script> -->
+    <!-- <h1>Images</h1>
+
+    <div>
+        <img src="https://picsum.photos/200/300" alt="First Image"/>
+    </div>
+    <button>+</button>
+    <button>-</button>
+    <div>
+        <img src="https://picsum.photos/200/300" alt="Second Image"/>
+    </div>
+    <button>+</button>
+    <button>-</button>
+    <div>
+        <img src="https://picsum.photos/200/300" alt="Third Image"/>
+    </div> -->
+
+    <h1>Mountains</h1>
+    <div id="mountains"></div>
+
+<!--     <script>
+      let imagen01 = document.getElementsByTagName('img')[0];
+      let imagen02 = document.getElementsByTagName('img')[1];
+      let imagen03 = document.getElementsByTagName('img')[2];
+      let sourceImages = ["https://media.gq.com.mx/photos/5e220ec2ffa8c7000803441e/3:4/w_2070,h_2760,c_limit/40-datos-curiosos-para-descubrir-a-scarlett-johansson.jpg", "https://as01.epimg.net/meristation/imagenes/2021/08/23/noticias/1629718596_213839_1629718640_noticia_normal.jpg", "https://www.eluniversal.com.mx/sites/default/files/2017/06/20/garfield_historia_real2_0.jpg"];
+      let altImages = {alt01:'Scarlet Johanson', alt02:'Viuda Negra', alt03: 'Garfield'};
+      function widthMedium(){
+        imagen01.width = '500px';
+      } 
+
+      imagen01.src = sourceImages[0];
+      imagen02.src = sourceImages[1];
+      imagen03.src = sourceImages[2];
+      imagen01.alt = altImages["alt01"];
+      imagen02.alt = altImages["alt02"];
+      imagen03.alt = altImages["alt03"];
+
+      let buttonPlus = document.getElementsByTagName('button')[0];
+      let buttonMinus = document.getElementsByTagName('button')[1];
+
+      buttonPlus.addEventListener("click",function() {
+          const image = document.getElementsByTagName('img')[0];
+          image.width *= 0.10;
+      });
+
+      buttonMinus.addEventListener("click",function() {
+          const image = document.getElementsByTagName('img')[0];
+          image.width /= 1.10;
+      });
+
+      let container = document.createElement('div');
+      let header = document.createElement('h2');
+      let image = document
+      let text = document.createTextNode('div');
+    </script> -->
+
+    <script>
+        var data = [
+        {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+        {name: "Everest", height: 8848, place: "Nepal"},
+        {name: "Mount Fuji", height: 3776, place: "Japan"},
+        {name: "Vaalserberg", height: 323, place: "Netherlands"},
+        {name: "Denali", height: 6168, place: "United States"},
+        {name: "Popocatepetl", height: 5465, place: "Mexico"},
+        {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+      ];
+
+      function buildTable(data) {
+        var table = document.createElement("table");
+        var fields = Object.keys(data[0]);
+        var headRow = document.createElement("tr");
+
+        fields.forEach(function(field) {
+            var headCell = document.createElement("th");
+            headCell.appendChild(document.createTextNode(field));
+            headRow.appendChild(headCell);
+        });
+
+        table.appendChild(headRow);
+
+        data.forEach(function(object) {
+            var row = document.createElement("tr");
+            fields.forEach(function(field) {
+            var cell = document.createElement("td");
+            cell.appendChild(document.createTextNode(object[field]));
+            if (typeof object[field] == "number") {
+                cell.style.textAlign = "right";
+            }
+            row.appendChild(cell);
+            });
+            table.appendChild(row);
+        });
+
+        return table;
+    }
+
+        document.getElementById("mountains")
+        .appendChild(buildTable(data));
+
+    </script>
+</body>
+</html>

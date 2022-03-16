@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!-- <script>
+    function power (base, exponent) {
+        var result = 1;
+
+        for(var i = 0; i < exponent; i++){
+            result *= base;
+        }
+        return console.log(result);
+    }
+
+    power(10 , 2);
+
+</script> -->
+
+<!-- <script>
+    const pow2 = function (base, exponent) {
+        var result = 1;
+
+        for(var i = 0; i < exponent; i++){
+            result *= base;
+        }
+        return console.log(result);
+    }
+
+    function hello(number){
+        if (number == 0)
+            return;
+        console.log("hello")
+        hello(number-1);
+    }
+    hello(2);
+
+    pow2 (10, 2)
+</script> -->
+
+<!-- <script>
+    const getLargerInt = function (number1, number2){
+        var numeral1 = number1;
+        var numeral2 = number2;
+        let largeInt = 0;
+
+        if( numeral1 > numeral2){
+            console.log(numeral1);
+            largeInt = numeral1;
+
+        } else {
+            console.log(numeral2);
+            largeInt = numeral2;
+        }
+        return largeInt;
+    }
+
+    getLargerInt(35, 15);
+    let a = getLargerInt(35, 15);
+    console.log(a);
+</script> -->
+
+<script>
+    function fibonacci(num) {
+    if (num <= 1) return 1;
+
+    return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+
+
+     function fibonacciSequence(limit) {
+  if(limit < 1) return console.log('Limit must be greater than 0');
+
+  for(var i = 0; i < limit; i++ ) {
+    console.log( fibonacci(i) );
+  }
+}
+console.log(fibonacciSequence(6));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--  <script>
+        const Person = function(age, firstName, lastName){
+            this.age = age;
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        const person1 = {
+            age: 15,
+            'firstName': "Pepe",
+            "lastName": "Perez",
+            getFullName: function () {
+                return `Full name: ${this.firstName} ${this.lastName}`
+            }
+        }
+
+    let person6 = new Person(16, 'Juan', 'Dominguez');
+
+        const Vec =  function (x, y){
+            this.x = x;
+            this.y = y;
+        }
+
+        Vec.prototype.plus = function (other) {
+            return new Vec(this.x + other.x, this.y + other.y);
+        }
+
+        Vec.prototype.minus = function(other) {
+            return new Vec(this.x - other.x, this.y - other.y);
+        }
+
+        Vec.prototype.length = function() {
+            return Math.sqrt(this.x * this.x + this.y * this.y);
+        }
+
+        var vec1 = new Vec(1, 2);
+        var vec2 = new Vec(2, 3);
+
+        console.log(vec1.plus(vec2)); // Vec { x: 3, y: 5 }
+        console.log(vec1.minus(vec2)); // Vec { x: -1, y: -1 }
+        console.log(vec1.length()); // 2.23606797749979
+
+        const Vector =  function (x, y){
+            this.x = x;
+            this.y = y;
+            this.plus = function (other) {
+                return new Vector(this.x + other.x, this.y + other.y )
+            }
+        }
+
+        const v1 = new Vector(2,3);
+        const v2 = new Vector(5,5);
+
+
+
+    </script> -->
+
+    <!-- <script>
+        class Person {
+            constructor( age, firstName, lastName){
+                this.age = age;
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.nationality =nationality;
+            }
+        }
+
+        class Mexican extends Person {
+            constructor (age, firstName, lastName){
+                super (age, firstName, lastName, 'Mexicana')
+            }
+        }
+
+        class MexicoCity extends Mexican {
+            constructor (age, firstName, lastName){
+                super (age, firstName, lastName);
+                this.state = "Mexico City"
+            }
+        }
+
+        let person1 = new Person(15, 'Pedro', 'lopez', 'italian')
+
+        let person1 = new Person (15, 'Vania', 'Lopez' )
+
+        console.log(person1)
+    </script> -->
+
+<!--     <script>
+        class Group {
+    constructor() {
+        this.members = [];
+    }
+
+    has(element) {
+        return this.members.includes(element)
+    }
+
+    add(element) {
+        if (!this.has(element)) {
+            this.members.push(element)
+        }
+    }
+
+
+    static from(arrayElements) {
+        let group = new Group();
+        for (let i = 0; i < arrayElements.length; i++) {
+            group.add(arrayElements[i]);
+        }
+        return group;
+    }
+
+
+}
+
+const a1 = [5, 4, 3, 3, 1];
+let g1 = new Group();
+g1.has()
+g1.add()
+
+let g2 = Group.from(a1)
+
+    </script>  -->
+
+    <script>
+        class Producto {
+    constructor(nombre, sku, precio, marca) {
+        this.nombre = nombre;
+        this.sku = sku;
+        this.precio = precio;
+        this.marca =  marca;
+        }
+    }
+
+    class Comestible extends Producto {
+    constructor(nombre, sku, precio, marca) {
+        super (nombre, sku, precio, marca);
+                this.calorias = calorias;
+        }
+    }
+
+    class Gansito extends Comestible {
+    constructor(nombre, sku, precio, marca, calorias) {
+        super (nombre, sku, precio, marca, calorias);
+                this.tipo = tipo;
+        }
+    }
+
+    class GansitoClasico extends Gansito {
+    constructor(nombre, sku, precio, marca, calorias, tipo) {
+        super (nombre, sku, precio, marca, calorias,tipo);
+                this.pastelito = pastelito;
+        }
+    }
+
+    </script>
+</body>
+</html>

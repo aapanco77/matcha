@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button class="enter">Click me</button>
+
+    <h1 id="title">Hello World</h1>
+
+    <input type="text" id="text" />
+
+    <p>🎈</p>
+
+
+    <button class="change-color-button" data-color="red">Red</button>
+    <button class="change-color-button" data-color="blue">Red</button>
+    <button class="change-color-button" data-color="black">Red</button>
+    <button class="change-color-button" data-color="pink">Pink</button>
+    <button class="change-color-button" data-color="tomato">Tomato</button>
+    <script>
+
+// function printListenining(){
+//     console.log('escuchando');
+// }
+
+// let printListening = function () {
+//     console.log ('escuchando')
+// }
+    // window.addEventListener("click", function);
+
+/*     window.addEventListener("click", printListenining);
+ */
+    // const myButton = document.getElementsByClassName('enter')[0];
+    // const myButton = document.querySelector('.enter');
+    // const myButton = document.querySelector('button');
+    // const myButton = document.querySelector('button');
+
+    // myButton.addEventListener ("click", () =>{
+    //     printListenining();
+    //     myButton.removeEventListener("click", this)
+    // })
+    //  var title = document.getElementById('title');
+    //  var redButton = document.getElementById('red');
+    //  var blueButton = document.getElementById('blue');
+    //  var blackButton = document.getElementById('black');
+
+    //  redButton.addEventListener("click", function(){
+    //      title.style = "color: red; font-size: 4em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;";
+    //  });
+
+    //  blueButton.addEventListener("click", function(){
+    //      title.style = "color: blue;";
+    //  });
+
+    //  blackButton.addEventListener("click", function(){
+    //      title.style = "color: black;";
+    //      redButton.disabled = true;
+    //      blueButton.disabled = true;
+    //  });
+
+    //  const colorButtons = document.getElementsByClassName('change-color-button');
+
+    //  for (let i=0; i< colorButtons.length; i++){
+    //      colorButtons[i].addEventListener("click", function(){
+    //          title.style = `color: ${colorButtons[i].dataset.color};`
+    //      })
+    //  };
+
+    //  colorButtons[i].addEventListener("mousedown",function (event){
+    //      if(event.button === 0){
+    //          console.log("left button");
+    //      } else if (event.button === 1) {
+    //          console.log('middle button');
+    //      }
+    //  })
+
+    // var title = document.getElementById('title');
+    // var input = document.getElementById('text');
+
+    // input.addEventListener("input",function(event){
+    //     title.textContent = event.target.value;
+    // })
+
+
+
+var p = document.querySelector("p");
+var size;
+
+function setSize(newSize) {
+  size = newSize;
+  p.style.fontSize = size + "px";
+}
+
+setSize(20);
+
+function handleArrow(event) {
+  if (event.key == "ArrowUp") {
+    if (size > 80) {
+      p.textContent = "💥";
+      document.body.removeEventListener("keydown", handleArrow);
+    } else {
+      setSize(size * 1.1);
+      event.preventDefault();
+    }
+  } else if (event.key == "ArrowDown") {
+    setSize(size * 0.9);
+    event.preventDefault();
+  }
+}
+
+document.body.addEventListener("keydown", handleArrow);
+
+    </script>
+
+<!-- <body>
+
+    <h2>Press Enter to turn this page blue.</h2>
+    <h2>Press Ctrl + Enter to turn this page orange.</h2>
+
+    <script>
+        window.addEventListener("keydown", function (event) {
+            if (event.key == "Enter") {
+                document.body.style.background = "lightblue";
+            }
+
+            if (event.key == "Enter" && event.ctrlKey) {
+                document.body.style.background = "orange";
+            }
+        })
+
+        window.addEventListener("keyup", function (event) {
+            if (event.key == "Enter") {
+                document.body.style.background = "";
+            }
+        })
+    </script>
+</body> -->
+
+</body>
+</html>

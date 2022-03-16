@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     <form action="" id="userAge">
+        <!-- <label for="">Ingresa tu edad</label> -->
+<!--         <label>Ingresa tu Dinero</label>
+        <input name="age" type="text">
+        <input type="submit">
+    </form>
+
+    <div id="message">
+
+    </div>
+
+    
+        const form = document.getElementById('userAge');
+        const messageDiv = document.getElementById('message');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const age = form.elements['age'].value;
+            let message = '';
+
+            if (money === 1) {
+                message = "toma un chicle";
+            }
+
+
+            switch(money) {
+                case 1:
+                    message = " toma un chicle";
+                    break;
+                case 2:
+                case 3:
+                    message = "toma tres pica fresa";
+                    break;
+                case 4:
+                    message = "toma un cunito de Knorr"
+                break;
+
+            }
+        });
+
+    let speed = 120;
+    let message = '';
+
+    if (speed > 100) {
+        message = " Vas muy rapido"
+    }
+    else {
+        message ="Estas en el limite"
+    }
+
+    let message = speed > 100 ? "Vas muy rapido" : "Estas en el límite";
+    let message = speed > 100 ? "Vas muy rapido" : "Estas en el límite";
+
+    let time = "Morning";
+    let saludo = time == "Morning" ? "Buenos dias" : time == "afternon" ? "BUenas tardes" : "BUenas noches"; -->
+<!--     <script>
+
+        for(let i = 0; i < 11; i++) {
+            /* console.log("Numero: " + i); */
+            console.log(`Número: ${i}`);
+        }
+
+            console.log('mi programa ha terminado');
+    </script> -->
+
+<!--     <script>
+        for(let i = 0; i < 11; i++)
+        for(let i = 100; i >= 0; i--) {
+
+            if (i%2 == 0)
+            {
+                console.log(`El Número ${i} es par`);
+            }
+        }
+    </script> -->
+
+    <script>
+        /*while (i <= 100) {
+            if(i % 2 === 0) {
+                console.log(i)
+            }
+
+            i++
+        }*/
+
+        for(let counter = 2; counter <= 100; counter++) {
+            let isPrime = true;
+
+            for(let i = 2; i <= counter; i++) {
+                if(counter % i === 0 && i !== counter) {
+                isPrime =  false;
+            }
+        }
+
+        if(isPrime) {
+            console.log(`El Número ${counter} es primo`);
+        }
+    }
+
+       /*   if (i == 3) {
+            continue;
+        } */
+
+    </script>
+
+</body>
+</html>

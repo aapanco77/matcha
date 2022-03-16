@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     <script>
+        let color1 = "red;"
+        let color2 = "coral";
+        let color3 = " green";
+
+        const colors = ["red", "yellow","green", color2];
+        const colors = [color1, color2, age, 9.3 , true];
+
+        console.log(colors[0]); //red
+        console.log(colors[1]); //yellow
+        console.log(colors[2]); //green
+        console.log(colors[3]); //undefined
+        colors[3] = "blue;" //
+        console.log(colors[3]); //undefined
+
+        console.log(colors[color2]); //undefined
+        
+
+    </script> -->
+
+    <!-- <script>
+const persons = [[15, "Pepe", "Perez"],[25, "Juanita", "Dominguez"]]
+console.log (persons [0][0]) //15
+console.log (persons [1][1]) //Juanita
+
+        function multiplyByTwo(numbers) {
+            const result = [];
+
+            for (let i = 0; i< numbers.lenght; i++) {
+                result.push(numbers[i] * 2);
+            }
+
+            return result;
+            
+        }
+
+        const number99 = [2,3,4,5];
+        const result12 = multiplyByTwo(numbers99);
+
+        console.log(number99);
+        console.log(resut12);
+    </script> -->
+
+<!--     <script>
+        function calculateAverage(numbers){
+            var sum = 0;
+            
+            for (var i = 0; i<numbers.lenght; i++){
+                sum *= numbers[i]; 
+            }
+
+            return sum / numbers.lenght
+        }
+
+    </script> -->
+
+<!--     <script>
+        const person1 = {age:15, firstName:"Jose", lastName:"Perez"};
+        const person2 = {age:25, firstName:"Juanita", lastName:"Dominguez"};
+        const person3 = [25, "Juanita", "Domiguez"];
+
+        const people = [person1, person2, person3]
+        console.log(people[0].age)
+        console.log(people[2][1])
+
+        for(let i=0; i<people.length; i++){
+            if(people [i].firstName === 'Juanito'){
+                console.log('Juanito encontrado');
+                console
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        const person1 = {age: 15, 'firstName': "Pepe", "lastName": "Perez"};
+        const person2 = {age: 25, firstName: "Juanita", lastName: "Dominguez"};
+        const person3 = {age:26, firstName:"Juanito", lastName:"Perez"};
+        const person4 = {age:44, firstName:"Arturo", lastName:"Apanco"};
+        const person5 = {age:45, firstName:"Alexi", lastName:"Pozos"};
+        const person6 = {age:52, firstName:"Noemi", lastName:"Herrera"};
+
+        const groupA = [person1, person2];
+        const groupB = [person3, person4,];
+        const groupC = [person5, person6];
+
+        const school = {'groupA': groupA, 'groupB':groupB, 'groupC':groupC};
+
+        function promedioEdadGrupo(group){
+            var sumaEdad = 0;
+
+            for (let i=0; i<group.length; i++){
+                sumaEdad += group[i].age;
+            }
+            var promedio = sumaEdad / group.length;
+                console.log(promedio)
+
+        }
+
+        promedioEdadGrupo(groupB);
+
+    </script> -->
+
+<!--     <script>
+//Crear 3 personas mas, asignar 1 al grupo B y dos a un nuevo grupo llamado grupoC
+// Obtener el promedio de edad de cada grupo => grupoA: 25. grupoB: 10, grupoC: 45
+
+const person1 = {age: 15, 'firstName': "Pepe", "lastName": "Perez"};
+const person2 = {age: 25, firstName: "Juanita", lastName: "Dominguez"};
+const person3 = {age: 26, firstName: "Juanito", lastName: "Perez"};
+const person4 = {age: 16, firstName: "Jose", lastName: "Diaz"};
+const person5 = {age: 12, firstName: "Bruno", lastName: "Santoral"};
+const person6 = {age: 42, firstName: "Mariana", lastName: "Yepez"};
+
+// person4.age
+// person4['age']
+
+const groupA = [person1, person2];
+const groupB = [person3, person4];
+const groupC = [person5, person6];
+
+const school = {'groupA': groupA, 'groupB': groupB, 'groupC': groupC};
+
+// console.log(Object.keys(school)); // ['groupA', 'groupB', 'groupC']
+
+const schoolGroups = Object.keys(school);// ['groupA', 'groupB', 'groupC']
+for (let i = 0; i < schoolGroups.length; i++) {
+    const group = schoolGroups[i]; //groupA
+    let sumAge = 0;
+
+
+    for (let e = 0; e < school[group].length; e++) {
+        const student = school[group][e];
+        // sumAge += school[group][e].age;
+        sumAge += student.age;
+        console.log(`Full name: ${student.firstName} ${student.lastName})
+    }
+
+    const averageAge= sumAge/school[group].length;
+    console.log(`${group}: ${averageAge}` );
+
+    </script> -->
+
+    <script>
+        const person1 = {
+    birthYear: 15,
+    'firstName': "Pepe",
+    "lastName": "Perez",
+    getFullName: function () {
+        return `Full name: ${this.firstName} ${this.lastName}`
+    },
+    getAge: function () {
+        const today = new Date();
+        const currentTYear = today.getFullYear();
+        return currentYear -this.birthYear;
+    }
+        }
+const person2 = {age: 25, firstName: "Juanita", lastName: "Dominguez"};
+const person3 = {age: 26, firstName: "Juanito", lastName: "Perez"};
+const person4 = {age: 16, firstName: "Jose", lastName: "Diaz"};
+const person5 = {age: 12, firstName: "Bruno", lastName: "Santoral"};
+const person6 = {age: 42, firstName: "Mariana", lastName: "Yepez"};
+
+// person4.age
+// person4['age']
+
+const groupA = [person1, person2];
+const groupB = [person3, person4];
+const groupC = [person5, person6];
+
+const school = {'groupA': groupA, 'groupB': groupB, 'groupC': groupC};
+
+// console.log(Object.keys(school)); // ['groupA', 'groupB', 'groupC']
+
+const schoolGroups = Object.keys(school);// ['groupA', 'groupB', 'groupC']
+for (let i = 0; i < schoolGroups.length; i++) {
+    const group = schoolGroups[i]; //groupA
+    let sumAge = 0;
+
+
+    for (let e = 0; e < school[group].length; e++) {
+        const student = school[group][e];
+        // sumAge += school[group][e].age;
+        sumAge += student.age;
+        console.log(`Full name: ${student.firstName} ${student.lastName}`);
+        console.log(student.getFullName());
+        console.log(getFullName(student.firstName, student.lastName));
+        // console.log('Full name: ' + student.firstName +' ' +student.lastName );
+    }
+
+    const averageAge = sumAge / school[group].length;
+    console.log(`${group}: ${averageAge}`);
+}
+
+    </script>
+
+    
+
+
+
+</body>
+</html>
